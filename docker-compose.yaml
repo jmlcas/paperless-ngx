@@ -1,5 +1,5 @@
 services:
-  
+
   broker:
     image: docker.io/valkey/valkey:9-alpine
     restart: unless-stopped
@@ -42,7 +42,7 @@ services:
       PAPERLESS_TIKA_GOTENBERG_ENDPOINT: http://gotenberg:3000
       PAPERLESS_TIKA_ENDPOINT: http://tika:9998
       PAPERLESS_DBPORT: 3306
-      
+
   gotenberg:
     image: docker.io/gotenberg/gotenberg:8.36
     restart: unless-stopped
